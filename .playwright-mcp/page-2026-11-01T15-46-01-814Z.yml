@@ -1,0 +1,67 @@
+- generic:
+  - banner [aria-hidden]:
+    - generic:
+      - link:
+        - /url: /
+      - navigation:
+        - generic:
+          - link:
+            - /url: "#catalogo"
+            - text: Catálogo
+          - link:
+            - /url: /conta
+            - text: Minha conta
+          - link:
+            - /url: /admin/login
+            - text: Administração
+        - button [expanded]:
+          - generic: Carrinho
+          - generic: "1"
+  - main [aria-hidden]:
+    - generic:
+      - generic:
+        - heading [level=1]: Catálogo
+        - generic:
+          - generic: Pesquisar produtos pelo nome
+          - searchbox
+      - generic:
+        - region:
+          - generic:
+            - article:
+              - generic: Imagem indisponível
+              - generic:
+                - generic:
+                  - generic:
+                    - heading [level=3]: GH 23
+                    - paragraph: Caixa de papelão - imagem ilustrativa
+                  - generic: Disponível
+                - generic:
+                  - strong: R$ 109,99
+                  - button
+  - contentinfo [aria-hidden]:
+    - link:
+      - /url: /privacidade
+      - text: Política de privacidade
+  - button "Open Next.js Dev Tools" [ref=f10e53] [cursor=pointer]
+  - alert
+  - dialog [ref=f10e59]:
+    - generic [ref=f10e60]:
+      - heading "Seu carrinho" [level=2] [ref=f10e61]
+      - paragraph [ref=f10e62]: A seleção permanece neste navegador até você abrir o WhatsApp.
+    - list [ref=f10e64]:
+      - listitem [ref=f10e65]:
+        - generic [ref=f10e71]:
+          - paragraph [ref=f10e72]: GH 23
+          - paragraph [ref=f10e73]: R$ 109,99
+          - generic [ref=f10e74]:
+            - button "Diminuir GH 23" [active] [ref=f10e75]
+            - generic [ref=f10e77]: "1"
+            - button "Aumentar GH 23" [ref=f10e78]
+            - button "Remover GH 23" [ref=f10e80]
+    - generic [ref=f10e84]:
+      - generic [ref=f10e85]:
+        - generic [ref=f10e86]: Subtotal
+        - strong [ref=f10e87]: R$ 109,99
+      - button "Falar com a loja no WhatsApp" [ref=f10e88]
+      - paragraph [ref=f10e91]: A disponibilidade e o valor final são confirmados pela loja.
+    - button "Fechar" [ref=f10e92]

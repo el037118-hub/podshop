@@ -1,0 +1,20 @@
+- generic:
+  - main [aria-hidden]
+  - generic [ref=f3e5] [cursor=pointer]:
+    - button "Open Next.js Dev Tools" [ref=f3e6]
+    - generic [ref=f3e10]:
+      - button "Open issues overlay" [ref=f3e11]:
+        - generic [ref=f3e12]:
+          - generic [aria-hidden] [ref=f3e13]: "0"
+          - generic [ref=f3e14]: "1"
+        - generic [ref=f3e15]: Issue
+      - button "Collapse issues badge" [ref=f3e16]
+  - alert
+  - dialog [ref=f3e20]:
+    - paragraph [ref=f3e21]: Acesso restrito
+    - heading "Você tem 18 anos ou mais?" [level=2] [ref=f3e22]
+    - paragraph [ref=f3e23]: Este catálogo é destinado exclusivamente a maiores de idade. Confirme sua idade para continuar.
+    - generic [ref=f3e24]:
+      - button "Sim, tenho 18 anos ou mais" [active] [ref=f3e25]
+      - button "Não tenho 18 anos" [ref=f3e26]
+    - paragraph [ref=f3e27]: Ao confirmar, você declara ter idade suficiente para acessar este catálogo.

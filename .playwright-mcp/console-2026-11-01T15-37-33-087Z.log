@@ -1,0 +1,200 @@
+[    1299ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[    1315ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[  405782ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[  405816ms] [LOG] [Fast Refresh] done in 5ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[  406890ms] [LOG] [Fast Refresh] done in 5ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[  427295ms] [LOG] [Fast Refresh] done in 5ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[  439257ms] [LOG] [Fast Refresh] done in 5ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[  441304ms] [LOG] [Fast Refresh] done in 5ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[  449886ms] [LOG] [Fast Refresh] done in 5ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[  450000ms] [ERROR] ./components/storefront.tsx:304:36
+Error: Expected '</', got 'jsx text'
+  302 |                               <Plus className="size-4" aria-hidden="true" />
+  303 |                             </Button>
+> 304 |                           </Button>
+      |                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 305 |                         </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^
+  306 |                       </article>
+  307 |                     ))}
+  308 |                   </div>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/storefront.tsx
+    ./app/page.tsx @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:995
+[  450064ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[  450121ms] [ERROR] ./components/storefront.tsx:304:36
+Error: Expected '</', got 'jsx text'
+  302 |                               <Plus className="size-4" aria-hidden="true" />
+  303 |                             </Button>
+> 304 |                           </Button>
+      |                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 305 |                         </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^
+  306 |                       </article>
+  307 |                     ))}
+  308 |                   </div>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/storefront.tsx
+    ./app/page.tsx @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:995
+[  452572ms] [ERROR] ./components/storefront.tsx:304:36
+Error: Expected '</', got 'jsx text'
+  302 |                               <Plus className="size-4" aria-hidden="true" />
+  303 |                             </Button>
+> 304 |                           </Button>
+      |                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 305 |                         </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^
+  306 |                       </article>
+  307 |                     ))}
+  308 |                   </div>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/storefront.tsx
+    ./app/page.tsx @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:995
+[  457002ms] [ERROR] ./components/storefront.tsx:306:23
+Error: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  304 |                         </div>
+  305 |                       </article>
+> 306 |                     ))}
+      |                       ^
+  307 |                   </div>
+  308 |                 </section>
+  309 |               ))}
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/storefront.tsx
+    ./app/page.tsx @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:995
+[  457056ms] [ERROR] ./components/storefront.tsx:306:23
+Error: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  304 |                         </div>
+  305 |                       </article>
+> 306 |                     ))}
+      |                       ^
+  307 |                   </div>
+  308 |                 </section>
+  309 |               ))}
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/storefront.tsx
+    ./app/page.tsx @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:995
+[  457070ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[  457137ms] [ERROR] ./components/storefront.tsx:306:23
+Error: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  304 |                         </div>
+  305 |                       </article>
+> 306 |                     ))}
+      |                       ^
+  307 |                   </div>
+  308 |                 </section>
+  309 |               ))}
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/storefront.tsx
+    ./app/page.tsx @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:995
+[  462324ms] [ERROR] ./components/storefront.tsx:306:23
+Error: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  304 |                         </div>
+  305 |                       </article>
+> 306 |                     ))}
+      |                       ^
+  307 |                   </div>
+  308 |                 </section>
+  309 |               ))}
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/storefront.tsx
+    ./app/page.tsx @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:995
+[  463824ms] [ERROR] ./components/storefront.tsx:306:23
+Error: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  304 |                         </div>
+  305 |                       </article>
+> 306 |                     ))}
+      |                       ^
+  307 |                   </div>
+  308 |                 </section>
+  309 |               ))}
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/storefront.tsx
+    ./app/page.tsx @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:995
+[  463913ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[  464576ms] [ERROR] ./components/storefront.tsx:306:23
+Error: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  304 |                         </div>
+  305 |                       </article>
+> 306 |                     ))}
+      |                       ^
+  307 |                   </div>
+  308 |                 </section>
+  309 |               ))}
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/storefront.tsx
+    ./app/page.tsx @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:995
+[  466589ms] [ERROR] ./components/storefront.tsx:306:23
+Error: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  304 |                         </div>
+  305 |                       </article>
+> 306 |                     ))}
+      |                       ^
+  307 |                   </div>
+  308 |                 </section>
+  309 |               ))}
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/storefront.tsx
+    ./app/page.tsx @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:995
+[  469143ms] [ERROR] ./components/storefront.tsx:306:23
+Error: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  304 |                         </div>
+  305 |                       </article>
+> 306 |                     ))}
+      |                       ^
+  307 |                   </div>
+  308 |                 </section>
+  309 |               ))}
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/storefront.tsx
+    ./app/page.tsx @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:995
+[  469176ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[  469234ms] [LOG] [Fast Refresh] done in 64ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[  469287ms] [LOG] [Fast Refresh] done in 64ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[  471566ms] [LOG] [Fast Refresh] done in 64ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[  473564ms] [LOG] [Fast Refresh] done in 64ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719
+[  473969ms] [LOG] [Fast Refresh] done in 64ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:719

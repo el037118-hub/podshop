@@ -1,0 +1,43 @@
+- generic [active] [ref=f3e36]:
+  - button "Open Next.js Dev Tools" [ref=f3e28] [cursor=pointer]:
+    - generic [ref=f3e38]:
+      - text: Compiling
+      - generic [ref=f3e39]:
+        - generic [ref=f3e40]: .
+        - generic [ref=f3e41]: .
+        - generic [ref=f3e42]: .
+  - alert [ref=f3e43]
+  - banner [ref=f3e44]:
+    - generic [ref=f3e45]:
+      - link "Podshop Imports, página inicial" [ref=f3e46] [cursor=pointer]:
+        - /url: /
+        - img "Podshop Imports" [ref=f3e47]
+      - navigation "Navegação principal" [ref=f3e48]:
+        - link "Conta" [ref=f3e49] [cursor=pointer]:
+          - /url: /conta
+        - link "Admin" [ref=f3e51] [cursor=pointer]:
+          - /url: /admin/login
+        - button "Abrir carrinho com 0 itens" [ref=f3e53]:
+          - generic [ref=f3e58]: "0"
+  - main [ref=f3e59]:
+    - generic [ref=f3e60]:
+      - generic [ref=f3e61]:
+        - heading "Catálogo" [level=1] [ref=f3e62]
+        - generic [ref=f3e63]:
+          - generic [ref=f3e64]: Pesquisar produtos pelo nome
+          - textbox "Pesquisar produtos pelo nome" [ref=f3e65]:
+            - /placeholder: Pesquisar produto...
+      - region "Produtos" [ref=f3e67]:
+        - generic [ref=f3e68]:
+          - heading "Produtos" [level=2] [ref=f3e69]
+          - paragraph [ref=f3e70]: 1 produto
+        - generic [ref=f3e73]:
+          - generic [ref=f3e74]:
+            - heading "GH 23" [level=3] [ref=f3e75]
+            - generic [ref=f3e76]: Disponível
+          - paragraph [ref=f3e77]: Caixa de papelão - imagem ilustrativa
+          - strong [ref=f3e78]: R$ 109,99
+          - button "Adicionar" [ref=f3e79]
+  - contentinfo [ref=f3e89]:
+    - link "Política de privacidade" [ref=f3e90] [cursor=pointer]:
+      - /url: /privacidade

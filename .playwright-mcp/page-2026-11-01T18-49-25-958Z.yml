@@ -1,0 +1,84 @@
+- generic:
+  - banner [aria-hidden]:
+    - generic:
+      - link:
+        - /url: /
+      - navigation:
+        - generic:
+          - link:
+            - /url: "#catalogo"
+            - text: Catálogo
+          - link:
+            - /url: /conta
+            - text: Minha conta
+          - link:
+            - /url: /admin/login
+            - text: Administração
+        - button [expanded]:
+          - generic: Carrinho
+          - generic: "2"
+  - main:
+    - generic [aria-hidden]:
+      - paragraph: Seleção Podshop / 2026
+      - generic:
+        - generic:
+          - heading [level=1]: Escolhas essenciais.
+          - paragraph: Encontre o que procura. Selecione seus itens e converse com a loja para finalizar o pedido.
+        - generic:
+          - generic: Pesquisar produtos no catálogo
+          - searchbox
+    - generic:
+      - generic:
+        - heading [level=2] [aria-hidden]: Catálogo selecionado
+        - generic: 01 produto
+      - generic [aria-hidden]:
+        - region:
+          - generic:
+            - article:
+              - generic:
+                - generic: PODSHOP
+                - generic:
+                  - generic [aria-hidden]: ◇
+                  - generic: Imagem indisponível
+              - generic:
+                - generic:
+                  - generic:
+                    - heading [level=3]: GH 23
+                  - generic: Disponível
+                - paragraph: Caixa de papelão - imagem ilustrativa
+                - generic:
+                  - generic:
+                    - generic: Valor unitário
+                    - strong: R$ 109,99
+                  - button:
+                    - generic: Adicionar +
+    - generic [aria-hidden]:
+      - generic: CATÁLOGO DIGITAL · PEDIDOS VIA ATENDIMENTO
+      - generic: SIMPLICIDADE EM CADA ESCOLHA
+  - contentinfo [aria-hidden]:
+    - link:
+      - /url: /privacidade
+      - text: Política de privacidade
+  - button "Open Next.js Dev Tools" [ref=f3e61] [cursor=pointer]
+  - alert
+  - dialog [ref=f3e99]:
+    - generic [ref=f3e100]:
+      - heading "Seu carrinho" [level=2] [ref=f3e101]
+      - paragraph [ref=f3e102]: O carrinho é temporário e será limpo ao sair ou recarregar esta página.
+    - list [ref=f3e104]:
+      - listitem [ref=f3e105]:
+        - generic [ref=f3e111]:
+          - paragraph [ref=f3e112]: GH 23
+          - paragraph [ref=f3e113]: R$ 109,99
+          - generic [ref=f3e114]:
+            - button "Diminuir GH 23" [ref=f3e115]
+            - generic [ref=f3e117]: "2"
+            - button "Aumentar GH 23" [active] [ref=f3e118]
+            - button "Remover GH 23" [ref=f3e120]
+    - generic [ref=f3e124]:
+      - generic [ref=f3e125]:
+        - generic [ref=f3e126]: Subtotal
+        - strong [ref=f3e127]: R$ 219,98
+      - button "Falar com a loja no WhatsApp" [ref=f3e128]
+      - paragraph [ref=f3e131]: A disponibilidade e o valor final são confirmados pela loja.
+    - button "Fechar" [ref=f3e132]

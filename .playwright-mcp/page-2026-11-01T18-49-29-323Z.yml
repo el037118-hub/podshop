@@ -1,0 +1,57 @@
+- generic [ref=f3e1]:
+  - banner [ref=f3e2]:
+    - generic [ref=f3e3]:
+      - link "Podshop Imports, página inicial" [ref=f3e4] [cursor=pointer]:
+        - /url: /
+        - img "Podshop Imports" [ref=f3e5]
+      - navigation "Navegação principal" [ref=f3e6]:
+        - generic [ref=f3e67]:
+          - link "Catálogo" [ref=f3e68] [cursor=pointer]:
+            - /url: "#catalogo"
+          - link "Minha conta" [ref=f3e69] [cursor=pointer]:
+            - /url: /conta
+          - link "Administração" [ref=f3e70] [cursor=pointer]:
+            - /url: /admin/login
+        - button "Abrir carrinho com 2 itens" [active] [ref=f3e136]:
+          - generic [ref=f3e10]: Carrinho
+          - generic [ref=f3e11]: "2"
+  - main [ref=f3e12]:
+    - generic [ref=f3e13]:
+      - paragraph [ref=f3e14]: Seleção Podshop / 2026
+      - generic [ref=f3e16]:
+        - generic [ref=f3e17]:
+          - heading "Escolhas essenciais." [level=1] [ref=f3e18]: Escolhasessenciais.
+          - paragraph [ref=f3e19]: Encontre o que procura. Selecione seus itens e converse com a loja para finalizar o pedido.
+        - generic [ref=f3e20]:
+          - generic [ref=f3e21]: Pesquisar produtos no catálogo
+          - searchbox "Pesquisar produtos no catálogo" [ref=f3e71]
+    - generic [ref=f3e26]:
+      - generic [ref=f3e27]:
+        - heading "Catálogo selecionado" [level=2] [ref=f3e28]
+        - generic [ref=f3e29]: 01 produto
+      - region "Produtos" [ref=f3e78]:
+        - article [ref=f3e80]:
+          - generic [ref=f3e81]:
+            - generic [ref=f3e82]: PODSHOP
+            - generic [ref=f3e83]:
+              - generic [aria-hidden] [ref=f3e84]: ◇
+              - generic [ref=f3e85]: Imagem indisponível
+          - generic [ref=f3e86]:
+            - generic [ref=f3e87]:
+              - heading "GH 23" [level=3] [ref=f3e89]
+              - generic [ref=f3e90]: Disponível
+            - paragraph [ref=f3e91]: Caixa de papelão - imagem ilustrativa
+            - generic [ref=f3e92]:
+              - generic [ref=f3e93]:
+                - generic [ref=f3e94]: Valor unitário
+                - strong [ref=f3e95]: R$ 109,99
+              - button "Adicionar GH 23 ao carrinho" [ref=f3e96]:
+                - generic [ref=f3e97]: Adicionar +
+    - generic [ref=f3e51]:
+      - generic [ref=f3e52]: CATÁLOGO DIGITAL · PEDIDOS VIA ATENDIMENTO
+      - generic [ref=f3e53]: SIMPLICIDADE EM CADA ESCOLHA
+  - contentinfo [ref=f3e54]:
+    - link "Política de privacidade" [ref=f3e55] [cursor=pointer]:
+      - /url: /privacidade
+  - button "Open Next.js Dev Tools" [ref=f3e61] [cursor=pointer]
+  - alert [ref=f3e65]

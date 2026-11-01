@@ -1,0 +1,19 @@
+1. `how` over the affected subsystem. n/a: the catalog flow and Sheet ownership are already explicit in the inspected components.
+2. `architect` for parallel design exploration. n/a: user approved the direction and only local styling choices remain.
+3. Write the throughput checkpoint as four todo items. A dimension that genuinely does not apply (single file, no fan-out) keeps its item with `n/a: <reason>` rather than being dropped:
+   - **Blocking first steps.** Read project instructions, design system, current storefront and Sheet implementations, and the installed Next CSS guide.
+   - **Independent workstreams.** n/a: catalog card and shared Sheet animations are coupled through the same visual system; edit and verify serially.
+   - **Shared mutable state.** n/a: no parallel file writers are permitted for this task.
+   - **Smallest safe decomposition.** The primary agent owns both UI files because the visual change is a small, cohesive styling pass and subagent spawning is disabled.
+4. Delegate code-writing to a subagent using your configured feature model (default in poteto-mode's Models section) with a specific scope (file paths, named data shape and its organizing structure per **principle-model-the-domain**, a state machine over scattered booleans, a table/registry over branching, a typed model over repeated shape assumptions, chosen before the delegate writes logic, and success criteria). Pick each subagent's reasoning level for the job, per the Subagents section. When the implementation admits multiple valid shapes (error handling, abstraction layer, test structure), delegate via the **arena** skill instead so the runners surface the alternatives and the cross-judge guards the pick. Mandatory: no skip-with-reason escape, and Laziness Protocol does not override it (the gain is review separation, not lines saved). A subagent forbidden to spawn satisfies this by owning the diff directly with the same review separation. No "standing by" reply that waits on a nested agent. **Give every file-writing delegate its own worktree** (spawn it with `isolation: "worktree"`, or hand it an exclusive branch), and do not write files or run a suite in a worktree a delegate still holds. On Claude Code, `isolation: "worktree"` branches from the remote default branch unless the `worktree.baseRef` setting is `"head"`. When the delegate builds on commits the default branch lacks, commit them, create its worktree with `git worktree add <path> -b <delegate-branch> HEAD`, and name that base commit in the brief. Fencing a file in the brief's prose is not a lock (**principle-separate-before-serializing-shared-state**). Comments per **Comments**. Surgical edits, re-ground against the source for upstream-derived files. Port shared-primitive improvements to all consumers and verify each. Commit liberally. n/a: platform instructions prohibit spawning; the primary agent owns the diff.
+5. Verify on the matching surface. "Inconclusive" or wrong-surface is not a pass. Flag it.
+6. Rebase into small, ordered commits. Stack follow-ups. n/a: user explicitly prohibited commits.
+7. If the design is contested, `interrogate` before shipping. n/a: the user approved the visual direction.
+8. Run **Opening a PR**. n/a: no PR was requested.
+
+Task-specific checks:
+- [x] Inspect the catalog at mobile, tablet, and desktop sizes before and after changes.
+- [x] Apply refined catalog cards, image placeholders, one-product balance, and cart feedback without changing product data or interactions.
+- [x] Add subtle open/close transitions to the existing Radix Sheet, respecting reduced motion.
+- [x] Run lint, TypeScript, build, and Playwright checks for search, focus, add, quantity, and cart panel. Build was attempted with both Turbopack and Webpack; see limitation in final report.
+- [x] Report actual references, checks, and remaining limits.

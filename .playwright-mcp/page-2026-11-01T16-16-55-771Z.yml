@@ -1,0 +1,50 @@
+- generic:
+  - banner [aria-hidden]:
+    - generic:
+      - link:
+        - /url: /
+      - navigation:
+        - button [expanded]
+        - button:
+          - generic: "0"
+  - main [aria-hidden]:
+    - generic:
+      - generic:
+        - heading [level=1]: Catálogo
+        - generic:
+          - generic: Pesquisar produtos pelo nome
+          - searchbox
+      - generic:
+        - region:
+          - generic:
+            - article:
+              - generic: Imagem indisponível
+              - generic:
+                - generic:
+                  - generic:
+                    - heading [level=3]: GH 23
+                    - paragraph: Caixa de papelão - imagem ilustrativa
+                  - generic: Disponível
+                - generic:
+                  - strong: R$ 109,99
+                  - button
+  - contentinfo [aria-hidden]:
+    - link:
+      - /url: /privacidade
+      - text: Política de privacidade
+  - button "Open Next.js Dev Tools" [ref=f3e59] [cursor=pointer]
+  - alert
+  - dialog [ref=f3e65]:
+    - generic [ref=f3e66]:
+      - heading "Menu" [level=2] [ref=f3e67]
+      - paragraph [ref=f3e68]: Acesse o catálogo e sua conta.
+    - navigation "Menu principal" [ref=f3e69]:
+      - link "Catálogo" [ref=f3e70] [cursor=pointer]:
+        - /url: "#catalogo"
+      - link "Minha conta" [ref=f3e71] [cursor=pointer]:
+        - /url: /conta
+      - link "Administração" [ref=f3e75] [cursor=pointer]:
+        - /url: /admin/login
+      - link "Política de privacidade" [ref=f3e79] [cursor=pointer]:
+        - /url: /privacidade
+    - button "Fechar" [active] [ref=f3e80]

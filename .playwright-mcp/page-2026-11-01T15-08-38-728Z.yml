@@ -1,0 +1,29 @@
+- generic [active] [ref=f1e1]:
+  - main [ref=f1e2]:
+    - link "Podshop Imports, página inicial" [ref=f1e4] [cursor=pointer]:
+      - /url: /
+      - img "Podshop Imports" [ref=f1e5]
+    - generic [ref=f1e7]:
+      - generic [ref=f1e8]:
+        - heading "Entrar na conta" [level=3] [ref=f1e9]
+        - paragraph [ref=f1e10]: Entre para consultar e atualizar seus dados.
+      - generic [ref=f1e11]:
+        - generic [ref=f1e12]:
+          - generic [ref=f1e13]:
+            - generic [ref=f1e14]: E-mail
+            - textbox "E-mail" [ref=f1e15]
+          - generic [ref=f1e16]:
+            - generic [ref=f1e17]: Senha
+            - textbox "Senha" [ref=f1e18]
+          - button "Entrar" [ref=f1e19]
+        - paragraph [ref=f1e20]:
+          - text: Ainda não tem conta?
+          - link "Criar conta" [ref=f1e21] [cursor=pointer]:
+            - /url: /conta/criar
+    - generic [ref=f1e22]:
+      - link "Política de privacidade" [ref=f1e23] [cursor=pointer]:
+        - /url: /privacidade
+      - link "Voltar ao catálogo" [ref=f1e24] [cursor=pointer]:
+        - /url: /
+  - button "Open Next.js Dev Tools" [ref=f1e30] [cursor=pointer]
+  - alert [ref=f1e34]

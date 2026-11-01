@@ -1,0 +1,41 @@
+- generic [active] [ref=f6e1]:
+  - banner [ref=f6e2]:
+    - generic [ref=f6e3]:
+      - link "Podshop Imports, página inicial" [ref=f6e4] [cursor=pointer]:
+        - /url: /
+        - img "Podshop Imports" [ref=f6e5]
+      - navigation "Navegação principal" [ref=f6e6]:
+        - generic [ref=f6e7]:
+          - link "Catálogo" [ref=f6e8] [cursor=pointer]:
+            - /url: "#catalogo"
+          - link "Minha conta" [ref=f6e9] [cursor=pointer]:
+            - /url: /conta
+          - link "Administração" [ref=f6e13] [cursor=pointer]:
+            - /url: /admin/login
+        - button "Abrir carrinho com 0 itens" [ref=f6e17]:
+          - generic [ref=f6e22]: Carrinho
+          - generic [ref=f6e23]: "0"
+  - main [ref=f6e24]:
+    - generic [ref=f6e25]:
+      - generic [ref=f6e26]:
+        - heading "Catálogo" [level=1] [ref=f6e27]
+        - generic [ref=f6e28]:
+          - generic [ref=f6e29]: Pesquisar produtos pelo nome
+          - searchbox "Pesquisar produtos pelo nome" [ref=f6e30]
+      - region "Produtos" [ref=f6e32]:
+        - article [ref=f6e34]:
+          - generic [ref=f6e35]: Imagem indisponível
+          - generic [ref=f6e42]:
+            - generic [ref=f6e43]:
+              - generic [ref=f6e44]:
+                - heading "GH 23" [level=3] [ref=f6e45]
+                - paragraph [ref=f6e46]: Caixa de papelão - imagem ilustrativa
+              - generic [ref=f6e47]: Disponível
+            - generic [ref=f6e48]:
+              - strong [ref=f6e49]: R$ 109,99
+              - button "Adicionar GH 23 ao carrinho" [ref=f6e50]
+  - contentinfo [ref=f6e52]:
+    - link "Política de privacidade" [ref=f6e53] [cursor=pointer]:
+      - /url: /privacidade
+  - button "Open Next.js Dev Tools" [ref=f6e59] [cursor=pointer]
+  - alert [ref=f6e63]

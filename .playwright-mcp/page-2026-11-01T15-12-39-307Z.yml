@@ -1,0 +1,30 @@
+- generic [active] [ref=f4e1]:
+  - main [ref=f4e2]:
+    - link "Voltar ao catálogo" [ref=f4e3] [cursor=pointer]:
+      - /url: /
+      - img "Podshop Imports" [ref=f4e4]
+    - generic [ref=f4e5]:
+      - generic [ref=f4e6]:
+        - heading "Administração" [level=3] [ref=f4e7]
+        - paragraph [ref=f4e8]: Entre com a conta administrativa da loja.
+      - generic [ref=f4e9]:
+        - generic [ref=f4e10]:
+          - generic [ref=f4e11]:
+            - generic [ref=f4e12]: Email
+            - textbox "Email" [ref=f4e13]
+          - generic [ref=f4e14]:
+            - generic [ref=f4e15]: Palavra-passe
+            - textbox "Palavra-passe" [ref=f4e16]
+          - button "Entrar" [ref=f4e17]
+        - paragraph [ref=f4e18]: Não existe cadastro público. O acesso requer uma conta administradora configurada no Supabase.
+    - link "Voltar ao catálogo" [ref=f4e19] [cursor=pointer]:
+      - /url: /
+  - generic [ref=f4e24] [cursor=pointer]:
+    - button "Open Next.js Dev Tools" [ref=f4e25]
+    - generic [ref=f4e29]:
+      - button "Open issues overlay" [ref=f4e30]:
+        - generic [ref=f4e31]:
+          - generic [aria-hidden] [ref=f4e32]: "-1"
+          - generic [ref=f4e33]: "0"
+      - button "Collapse issues badge" [ref=f4e34]
+  - alert [ref=f4e37]

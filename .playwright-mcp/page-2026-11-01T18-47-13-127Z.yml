@@ -1,0 +1,51 @@
+- generic [active] [ref=f3e1]:
+  - banner [ref=f3e2]:
+    - generic [ref=f3e3]:
+      - link "Podshop Imports, página inicial" [ref=f3e4] [cursor=pointer]:
+        - /url: /
+        - img "Podshop Imports" [ref=f3e5]
+      - navigation "Navegação principal" [ref=f3e6]:
+        - button "Abrir menu" [ref=f3e7]
+        - button "Abrir carrinho com 0 itens" [ref=f3e9]:
+          - generic [ref=f3e10]: Carrinho
+          - generic [ref=f3e11]: "0"
+  - main [ref=f3e12]:
+    - generic [ref=f3e13]:
+      - paragraph [ref=f3e14]: Seleção Podshop / 2026
+      - generic [ref=f3e16]:
+        - generic [ref=f3e17]:
+          - heading "Escolhas essenciais." [level=1] [ref=f3e18]: Escolhasessenciais.
+          - paragraph [ref=f3e19]: Encontre o que procura. Selecione seus itens e converse com a loja para finalizar o pedido.
+        - generic [ref=f3e20]:
+          - generic [ref=f3e21]: Pesquisar produtos pelo nome
+          - searchbox "Pesquisar produtos pelo nome" [ref=f3e25]
+    - generic [ref=f3e26]:
+      - generic [ref=f3e27]:
+        - heading "Catálogo selecionado" [level=2] [ref=f3e28]
+        - generic [ref=f3e29]: 01 produto
+      - region "Produtos" [ref=f3e31]:
+        - article [ref=f3e33]:
+          - generic [ref=f3e34]:
+            - generic [ref=f3e35]: PODSHOP
+            - generic [ref=f3e36]:
+              - generic [aria-hidden] [ref=f3e37]: ◇
+              - generic [ref=f3e38]: Imagem indisponível
+          - generic [ref=f3e39]:
+            - generic [ref=f3e40]:
+              - heading "GH 23" [level=3] [ref=f3e42]
+              - generic [ref=f3e43]: Disponível
+            - paragraph [ref=f3e44]: Caixa de papelão - imagem ilustrativa
+            - generic [ref=f3e45]:
+              - generic [ref=f3e46]:
+                - generic [ref=f3e47]: Valor unitário
+                - strong [ref=f3e48]: R$ 109,99
+              - button "Adicionar GH 23 ao carrinho" [ref=f3e49]:
+                - generic [ref=f3e50]: +
+    - generic [ref=f3e51]:
+      - generic [ref=f3e52]: CATÁLOGO DIGITAL · PEDIDOS VIA ATENDIMENTO
+      - generic [ref=f3e53]: SIMPLICIDADE EM CADA ESCOLHA
+  - contentinfo [ref=f3e54]:
+    - link "Política de privacidade" [ref=f3e55] [cursor=pointer]:
+      - /url: /privacidade
+  - button "Open Next.js Dev Tools" [ref=f3e61] [cursor=pointer]
+  - alert [ref=f3e65]

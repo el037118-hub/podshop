@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Confirme seu e-mail | Podshop</title>
+  </head>
+  <body style="margin:0; padding:0; background:#0c0d0f; color:#202124; font-family:Arial,Helvetica,sans-serif;">
+    <div style="display:none; max-height:0; overflow:hidden; opacity:0;">Confirme seu e-mail para ativar sua conta Podshop.</div>
+    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background:#0c0d0f; padding:40px 16px;">
+      <tr>
+        <td align="center">
+          <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="max-width:560px; overflow:hidden; border:1px solid #303238; border-radius:14px; background:#17191b;">
+            <tr>
+              <td style="padding:28px 32px 18px;">
+                <p style="margin:0; color:#f5f5f4; font-size:25px; font-weight:700; letter-spacing:-1px;">pod<span style="color:#326dff;">shop</span></p>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:12px 32px 32px;">
+                <h1 style="margin:0 0 14px; color:#f5f5f4; font-size:25px; line-height:1.25;">Confirme seu e-mail</h1>
+                <p style="margin:0 0 24px; color:#c2c4c8; font-size:15px; line-height:1.65;">Falta só confirmar seu endereço de e-mail para ativar sua conta Podshop e acessar seus dados com segurança.</p>
+                <table role="presentation" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td style="border-radius:6px; background:#326dff;">
+                      <a href="{{ .ConfirmationURL }}" style="display:inline-block; padding:13px 20px; color:#ffffff; font-size:14px; font-weight:700; text-decoration:none;">Confirmar meu e-mail</a>
+                    </td>
+                  </tr>
+                </table>
+                <p style="margin:24px 0 0; color:#9b9da3; font-size:12px; line-height:1.6;">Se o botão não funcionar, copie e cole este endereço no navegador:<br /><a href="{{ .ConfirmationURL }}" style="color:#7ba0ff; word-break:break-all;">{{ .ConfirmationURL }}</a></p>
+                <p style="margin:20px 0 0; color:#9b9da3; font-size:12px; line-height:1.6;">Se você não criou uma conta, pode ignorar esta mensagem.</p>
+              </td>
+            </tr>
+          </table>
+          <p style="margin:18px 0 0; color:#777a82; font-size:11px;">Podshop Imports</p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

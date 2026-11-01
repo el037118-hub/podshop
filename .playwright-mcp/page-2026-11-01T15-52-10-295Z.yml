@@ -1,0 +1,57 @@
+- generic:
+  - banner [aria-hidden]:
+    - generic:
+      - link:
+        - /url: /
+      - navigation:
+        - button
+        - button [expanded]:
+          - generic: "1"
+  - main [aria-hidden]:
+    - generic:
+      - generic:
+        - heading [level=1]: Catálogo
+        - generic:
+          - generic: Pesquisar produtos pelo nome
+          - searchbox
+      - generic:
+        - region:
+          - generic:
+            - article:
+              - generic: Imagem indisponível
+              - generic:
+                - generic:
+                  - generic:
+                    - heading [level=3]: GH 23
+                    - paragraph: Caixa de papelão - imagem ilustrativa
+                  - generic: Disponível
+                - generic:
+                  - strong: R$ 109,99
+                  - button
+  - contentinfo [aria-hidden]:
+    - link:
+      - /url: /privacidade
+      - text: Política de privacidade
+  - button "Open Next.js Dev Tools" [ref=f11e53] [cursor=pointer]
+  - alert
+  - dialog [ref=f11e81]:
+    - generic [ref=f11e82]:
+      - heading "Seu carrinho" [level=2] [ref=f11e83]
+      - paragraph [ref=f11e84]: A seleção permanece neste navegador até você abrir o WhatsApp.
+    - list [ref=f11e86]:
+      - listitem [ref=f11e87]:
+        - generic [ref=f11e93]:
+          - paragraph [ref=f11e94]: GH 23
+          - paragraph [ref=f11e95]: R$ 109,99
+          - generic [ref=f11e96]:
+            - button "Diminuir GH 23" [active] [ref=f11e97]
+            - generic [ref=f11e99]: "1"
+            - button "Aumentar GH 23" [ref=f11e100]
+            - button "Remover GH 23" [ref=f11e102]
+    - generic [ref=f11e106]:
+      - generic [ref=f11e107]:
+        - generic [ref=f11e108]: Subtotal
+        - strong [ref=f11e109]: R$ 109,99
+      - button "Falar com a loja no WhatsApp" [ref=f11e110]
+      - paragraph [ref=f11e113]: A disponibilidade e o valor final são confirmados pela loja.
+    - button "Fechar" [ref=f11e114]

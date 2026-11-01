@@ -1,0 +1,67 @@
+- generic:
+  - banner [aria-hidden]:
+    - generic:
+      - link:
+        - /url: /
+      - navigation:
+        - generic:
+          - link:
+            - /url: "#catalogo"
+            - text: Catálogo
+          - link:
+            - /url: /conta
+            - text: Minha conta
+          - link:
+            - /url: /admin/login
+            - text: Administração
+        - button [expanded]:
+          - generic: Carrinho
+          - generic: "2"
+  - main [aria-hidden]:
+    - generic:
+      - generic:
+        - heading [level=1]: Catálogo
+        - generic:
+          - generic: Pesquisar produtos pelo nome
+          - searchbox
+      - generic:
+        - region:
+          - generic:
+            - article:
+              - generic: Imagem indisponível
+              - generic:
+                - generic:
+                  - generic:
+                    - heading [level=3]: GH 23
+                    - paragraph: Caixa de papelão - imagem ilustrativa
+                  - generic: Disponível
+                - generic:
+                  - strong: R$ 109,99
+                  - button
+  - contentinfo [aria-hidden]:
+    - link:
+      - /url: /privacidade
+      - text: Política de privacidade
+  - button "Open Next.js Dev Tools" [ref=f6e59] [cursor=pointer]
+  - alert
+  - dialog [ref=f6e99]:
+    - generic [ref=f6e100]:
+      - heading "Seu carrinho" [level=2] [ref=f6e101]
+      - paragraph [ref=f6e102]: O carrinho é temporário e será limpo ao sair ou recarregar esta página.
+    - list [ref=f6e104]:
+      - listitem [ref=f6e105]:
+        - generic [ref=f6e111]:
+          - paragraph [ref=f6e112]: GH 23
+          - paragraph [ref=f6e113]: R$ 109,99
+          - generic [ref=f6e114]:
+            - button "Diminuir GH 23" [ref=f6e115]
+            - generic [ref=f6e117]: "2"
+            - button "Aumentar GH 23" [active] [ref=f6e118]
+            - button "Remover GH 23" [ref=f6e120]
+    - generic [ref=f6e124]:
+      - generic [ref=f6e125]:
+        - generic [ref=f6e126]: Subtotal
+        - strong [ref=f6e127]: R$ 219,98
+      - button "Falar com a loja no WhatsApp" [ref=f6e128]
+      - paragraph [ref=f6e131]: A disponibilidade e o valor final são confirmados pela loja.
+    - button "Fechar" [ref=f6e132]

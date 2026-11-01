@@ -1,0 +1,26 @@
+- main [ref=f2e2]:
+  - link "Podshop Imports, página inicial" [ref=f2e4] [cursor=pointer]:
+    - /url: /
+    - img "Podshop Imports" [ref=f2e5]
+  - generic [ref=f2e7]:
+    - generic [ref=f2e8]:
+      - heading "Entrar na conta" [level=3] [ref=f2e9]
+      - paragraph [ref=f2e10]: Entre para consultar e atualizar seus dados.
+    - generic [ref=f2e11]:
+      - generic [ref=f2e12]:
+        - generic [ref=f2e13]:
+          - generic [ref=f2e14]: E-mail
+          - textbox "E-mail" [active] [ref=f2e15]
+        - generic [ref=f2e16]:
+          - generic [ref=f2e17]: Senha
+          - textbox "Senha" [ref=f2e18]
+        - button "Entrar" [ref=f2e19]
+      - paragraph [ref=f2e20]:
+        - text: Ainda não tem conta?
+        - link "Criar conta" [ref=f2e21] [cursor=pointer]:
+          - /url: /conta/criar
+  - generic [ref=f2e22]:
+    - link "Política de privacidade" [ref=f2e23] [cursor=pointer]:
+      - /url: /privacidade
+    - link "Voltar ao catálogo" [ref=f2e24] [cursor=pointer]:
+      - /url: /

@@ -1,0 +1,25 @@
+- generic [active] [ref=f7e1]:
+  - main [ref=f7e2]:
+    - link "Podshop Imports, página inicial" [ref=f7e4] [cursor=pointer]:
+      - /url: /
+      - img "Podshop Imports" [ref=f7e5]
+    - generic [ref=f7e7]:
+      - generic [ref=f7e8]:
+        - heading "Administração" [level=1] [ref=f7e9]
+        - paragraph [ref=f7e10]: Entre com a conta administrativa da loja.
+      - generic [ref=f7e11]:
+        - generic [ref=f7e12]:
+          - generic [ref=f7e13]:
+            - generic [ref=f7e14]: E-mail
+            - textbox "E-mail" [ref=f7e15]
+          - generic [ref=f7e16]:
+            - generic [ref=f7e17]: Senha
+            - textbox "Senha" [ref=f7e18]
+          - button "Entrar" [ref=f7e19]
+        - paragraph [ref=f7e20]: Não há cadastro público. O acesso requer uma conta com permissão de administrador no Supabase.
+    - generic [ref=f7e21]:
+      - link "Política de privacidade" [ref=f7e22] [cursor=pointer]:
+        - /url: /privacidade
+      - link "Voltar ao catálogo" [ref=f7e23] [cursor=pointer]:
+        - /url: /
+  - button "Open Next.js Dev Tools" [ref=f7e29] [cursor=pointer]
