@@ -313,11 +313,14 @@ export function AdminProducts({ initialProducts, initialCategories, loadError }:
       </Card>
 
       <Dialog open={dialogOpen} onOpenChange={closeForm}>
-        <DialogContent onPointerDownOutside={(event) => {
-          event.preventDefault();
-          if (document.activeElement instanceof HTMLElement) document.activeElement.blur();
-        }}>
-          <DialogHeader>
+        <DialogContent
+          className="bottom-0 left-0 right-0 top-4 h-[calc(100dvh_-_1rem)] max-h-none w-full max-w-none translate-x-0 translate-y-0 rounded-b-none rounded-t-2xl p-4 pb-[calc(1rem_+_env(safe-area-inset-bottom))] sm:bottom-auto sm:left-1/2 sm:right-auto sm:top-1/2 sm:h-auto sm:max-h-[90dvh] sm:w-[calc(100%_-_2rem)] sm:max-w-lg sm:-translate-x-1/2 sm:-translate-y-1/2 sm:rounded-xl sm:p-6"
+          onPointerDownOutside={(event) => {
+            event.preventDefault();
+            if (document.activeElement instanceof HTMLElement) document.activeElement.blur();
+          }}
+        >
+          <DialogHeader className="pr-8">
             <DialogTitle>{editing ? "Editar produto" : "Novo produto"}</DialogTitle>
             <DialogDescription>Preencha os dados do produto. Imagens PNG, JPEG ou WebP até 5 MB.</DialogDescription>
           </DialogHeader>
