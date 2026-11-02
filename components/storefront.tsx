@@ -13,7 +13,7 @@ import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTr
 import logo from "../visual-elements/Logotipo Podshop Branco e Azul.png";
 
 const money = new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" });
-const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "";
+const whatsappContact = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER?.trim() ?? "";
 const ageConfirmationKey = "podshop-age-confirmed";
 type CatalogProduct = Product & { category: { name: string } | null };
 type AgeAccess = "checking" | "confirm" | "denied" | "confirmed";
@@ -116,14 +116,24 @@ export function Storefront({ products, loadError }: { products: CatalogProduct[]
   }
 
   function contactStore() {
-    const phone = whatsappNumber.replace(/\D/g, "");
-    if (!/^\d{10,15}$/.test(phone)) {
-      setCartError("O número de WhatsApp da loja ainda não foi configurado.");
-      return;
+    const phone = whatsappContact.replace(/\D/g, "");
+    const isPhone = /^[+\d\s().-]+$/.test(whatsappContact) && /^\d{10,15}$/.test(phone);
+    let destination: URL | null = null;
+    if (isPhone) destination = new URL(`https://wa.me/${phone}`);
+    else {
+      try {
+        const link = new URL(whatsappContact);
+        if (link.protocol === "https:" && link.hostname === "wa.me" && /^\/message\/[A-Za-z0-9]+\/?$/.test(link.pathname)) destination = link;
+      } catch {
+        // Invalid contact configuration is reported below.
+      }
     }
+    if (!destination) return setCartError("Configure o número ou link de WhatsApp da loja.");
+
     const lines = cartItems.map(({ product, quantity }) => `${quantity} × ${product.name} — ${money.format(product.price * quantity)}`);
     const message = ["Olá! Tenho interesse nestes produtos:", ...lines, `Subtotal: ${money.format(total)}`].join("\n");
-    window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, "_blank", "noopener,noreferrer");
+    if (isPhone) destination.searchParams.set("text", message);
+    window.open(destination.toString(), "_blank", "noopener,noreferrer");
   }
 
   function confirmAge() {

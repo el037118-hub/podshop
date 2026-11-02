@@ -5,7 +5,7 @@ Catálogo em Next.js com produtos, perfis de clientes e imagens no Supabase.
 ## Desenvolvimento
 
 1. Copie `.env.example` para `.env.local`.
-2. Preencha a URL e a chave pública do Supabase, além do número do WhatsApp com DDI e DDD, somente algarismos.
+2. Preencha a URL e a chave pública do Supabase, além do número do WhatsApp com DDI e DDD ou do link curto da loja.
 3. Instale as dependências com `npm install` e inicie com `npm run dev`.
 4. Aplique as migrações ao projeto ligado com `supabase link` e `supabase db push`.
 
@@ -15,7 +15,7 @@ O catálogo usa o projeto configurado em `supabase/config.toml`. As migrações 
 
 O cadastro público fica em `/conta/criar`. Depois de confirmar o e-mail e entrar, o cliente pode preencher ou atualizar nome, telefone, endereço, forma de pagamento preferida e observações em `/conta`. O e-mail é mantido pelo Supabase Auth. Os demais dados ficam em `customer_profiles`.
 
-Adicione a URL de callback do site à lista de redirecionamentos permitidos em Supabase Auth. Em desenvolvimento, use `http://localhost:3000/auth/callback`; em produção, use `https://SEU-DOMINIO/auth/callback`. Configure o envio de e-mails no Supabase para que clientes recebam mensagens de confirmação. O formulário salva apenas a preferência de pagamento. Não peça dados de cartão ou conta bancária.
+Adicione as URLs de callback à lista de redirecionamentos permitidos em Supabase Auth. Em desenvolvimento, permita `http://localhost:3000/auth/callback` e `http://localhost:3000/auth/password-recovery`. Em produção, permita `https://SEU-DOMINIO/auth/callback` e `https://SEU-DOMINIO/auth/password-recovery`. Configure o envio de e-mails no Supabase para que clientes recebam confirmações e links de redefinição de senha. O formulário salva apenas a preferência de pagamento. Não peça dados de cartão ou conta bancária.
 
 ## Acesso administrativo
 

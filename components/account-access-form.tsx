@@ -69,7 +69,10 @@ export function AccountAccessForm({ mode, configured, initialNotice }: { mode: "
               <Input id="account-email" type="email" autoComplete="email" maxLength={254} value={email} required onChange={(event) => setEmail(event.target.value)} />
             </div>
             <div className="grid gap-2">
-              <Label htmlFor="account-password">Senha</Label>
+              <div className="flex items-center justify-between gap-3">
+                <Label htmlFor="account-password">Senha</Label>
+                {!isSignup && <Link href="/conta/esqueci-senha" className="text-xs font-medium text-accent hover:underline">Esqueci minha senha</Link>}
+              </div>
               <Input id="account-password" type="password" autoComplete={isSignup ? "new-password" : "current-password"} minLength={8} maxLength={72} value={password} required onChange={(event) => setPassword(event.target.value)} />
               {isSignup && <p className="text-xs text-muted-foreground">Use pelo menos 8 caracteres.</p>}
             </div>
