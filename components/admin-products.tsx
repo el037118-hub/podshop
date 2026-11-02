@@ -296,7 +296,7 @@ export function AdminProducts({ initialProducts, initialCategories, loadError }:
                     <TableCell>
                       <div className="flex justify-end gap-2">
                         <Button variant="outline" size="sm" disabled={busy} onClick={() => startEdit(product)}><Pencil className="size-3.5" />Editar</Button>
-                        <Button variant="destructive" size="icon" disabled={busy} aria-label={`Excluir ${product.name}`} onClick={() => deleteProduct(product)}><Trash2 className="size-4" /></Button>
+                        <Button variant="destructive" size="sm" disabled={busy} onClick={() => deleteProduct(product)}><Trash2 className="size-3.5" />Excluir</Button>
                       </div>
                     </TableCell>
                   </TableRow>
@@ -313,7 +313,10 @@ export function AdminProducts({ initialProducts, initialCategories, loadError }:
       </Card>
 
       <Dialog open={dialogOpen} onOpenChange={closeForm}>
-        <DialogContent>
+        <DialogContent onPointerDownOutside={(event) => {
+          event.preventDefault();
+          if (document.activeElement instanceof HTMLElement) document.activeElement.blur();
+        }}>
           <DialogHeader>
             <DialogTitle>{editing ? "Editar produto" : "Novo produto"}</DialogTitle>
             <DialogDescription>Preencha os dados do produto. Imagens PNG, JPEG ou WebP até 5 MB.</DialogDescription>
